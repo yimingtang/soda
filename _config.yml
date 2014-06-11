@@ -1,8 +1,11 @@
 # Site settings
 title: "Soda"
 baseurl: ""
+description: "Soda theme"
 url: "http://yourdomain.com"
 google-analytics: "UA-XXXXX-X"
+license: "http://creativecommons.org/licenses/by-nc/3.0/"
+twitter: "yiming_t"
 
 author:
   name: "Yiming Tang"
