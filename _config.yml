@@ -1,10 +1,60 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Soda
 baseurl: ""
 url: "http://yourdomain.com"
+google-analytics: "UA-XXXXX-X"
+
+author:
+  name: Yiming Tang
+  email: yimingnju@gmail.com
+  twitter: yiming_t
+  github: yimingtang
+  bio: "Hi, I'm Yiming."
+  url: http://xianqu.org
+
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+exclude:
+  - README.markdown
+  - Gemfile
+  - Gemfile.lock
+
+permalink: /:year/:month/:title
+paginate: 5
+
+# Markdown
+markdown: redcarpet
+
+redcarpet:
+  extensions:
+    - autolink
+    - disable_indented_code_blocks
+    - fenced_code_blocks
+    - footnotes
+    - highlight
+    - no_intra_emphasis
+    - smart
+    - strikethrough
+    - superscript
+    - tables
+    - with_toc_data
+
+# Syntax highlighter
+highlighter: pygments
+
+# Assets
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  css_compressor: sass
+  js_compressor:  uglifier
+  cache:          false
+
+gravatar:
+  default_image: mm
+  size: 100
+  rating: g
+  secure: true
+
