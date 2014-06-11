@@ -1,16 +1,16 @@
 # Site settings
-title: Soda
+title: "Soda"
 baseurl: ""
 url: "http://yourdomain.com"
 google-analytics: "UA-XXXXX-X"
 
 author:
-  name: Yiming Tang
-  email: yimingnju@gmail.com
-  twitter: yiming_t
-  github: yimingtang
+  name: "Yiming Tang"
+  email: "yimingnju@gmail.com"
+  twitter: "yiming_t"
+  github: "yimingtang"
   bio: "Hi, I'm Yiming."
-  url: http://xianqu.org
+  url: "http://xianqu.org"
 
 
 # Build settings

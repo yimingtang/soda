@@ -3,7 +3,8 @@ layout: post
 title: Example Content 1
 date:   2014-06-10 10:56:10
 categories: example
-cover_image: http://placehold.it/800x400
+cover_image: http://placehold.it/660x300
+cover_image_large: http://placehold.it/1366x400
 ---
 
 
