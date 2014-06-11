@@ -1,15 +1,26 @@
 ---
 layout: default
 ---
-<div class="post">
+<article class="post">
 
-  <header class="post-header">
+  <header>
+    <div class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date_to_long_string }}</a>
+      </time>
+      {% if page.categories %}
+        <span>
+          {{ page.categories | array_to_sentence_string }}
+        </span>
+      {% endif %}
+    </div>
+
     <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+  <div class="text">
+    {{ content }}
+  </div>
 
-</div>
+  {% include author.html %}
+</article>
