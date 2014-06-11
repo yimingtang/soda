@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-06-10 17:56:10
 categories: jekyll update
+cover_image: http://placehold.it/800x400
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
