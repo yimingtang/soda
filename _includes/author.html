@@ -1,28 +1,20 @@
 <div class="author" role="contentinfo">
-  <div class="author-col-1 column">
+  <div class="author-info">
     <a href="{{ site.baseurl }}/">{{ site.author.email | gravatar }}</a>
-  </div>
-
-  <div class="author-col-2 column">
     <h4>{{ site.author.name }}</h4>
-    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
     <ul>
       <li>
-        <a href="https://github.com/{{ site.author.github }}">
-          Github
-          <span>{{ site.author.github }}</span>
-        </a>
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
       </li>
       <li>
-        <a href="https://twitter.com/{{ site.author.twitter }}">
-          twitter
-          <span>{{ site.author.twitter }}</span>
-        </a>
+        <a href="https://github.com/{{ site.author.github }}">Github<span>{{ site.author.github }}</span></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/{{ site.author.twitter }}">twitter<span>{{ site.author.twitter }}</span></a>
       </li>
     </ul>
   </div>
-
-  <div class="author-col-3 column">
+  <div class="author-bio">
     <p class="text">{{ site.author.bio }}</p>
   </div>
 </div>
