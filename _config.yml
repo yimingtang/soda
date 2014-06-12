@@ -1,7 +1,7 @@
 # Site settings
 title: "Soda"
 baseurl: ""
-description: "Soda theme"
+description: "This is a site description << Soda Theme"
 url: "http://yourdomain.com"
 google-analytics: "UA-XXXXX-X"
 license: "http://creativecommons.org/licenses/by-nc/3.0/"

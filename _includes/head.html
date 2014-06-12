@@ -14,12 +14,13 @@
       {% elsif page.excerpt %}
         {% assign description = page.excerpt %}
       {% else %}
-        {% assign description = page.content | truncate: 250 %}
+        {% assign description = page.content %}
       {% endif %}
     {% else %}
       {% assign description = site.description %}
     {% endif %}
-    <meta name="description" content="{{ description | strip_html | strip_newlines }}">
+    {% assign description = description | strip_html | strip_newlines | escape | truncate: 250 %}
+    <meta name="description" content="{{ description }}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="license" href="{{ site.license }}">
@@ -43,7 +44,7 @@
     {% else %}
       <meta name="twitter:title" content="{{ site.title }}">
     {% endif %}
-    <meta name="twitter:description" content="{{ description | strip_html | escape }}">
+    <meta name="twitter:description" content="{{ description }}">
 
     <meta property="og:site_name" content="{{ site.title }}">
     {% if page.id %}
@@ -56,7 +57,7 @@
       <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}">
       <meta property="og:type" content="website">
     {% endif %}
-    <meta  property="og:description" content="{{ description | strip_html | escape }}">
+    <meta  property="og:description" content="{{ description }}">
     {% if page.cover_image_large %}
       <meta property="og:image" content="{{ page.cover_image_large }}">
     {% endif %}
