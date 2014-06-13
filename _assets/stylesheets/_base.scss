@@ -334,27 +334,23 @@ abbr[title] {
   }
 }
 
-/* Author */
-#author {
-  position: relative;
-  border-top: 1px solid $border-color;
-  padding: 3rem 0;
-  font-size: 0.85rem;
+/* ==========================================================================
+   Author Info
+   ========================================================================== */
 
-  >div.inner {
-    text-align: left;
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 680px;
-  }
+.author {
+  position: relative;
+  padding: 3rem 0;
+  border-top: 1px solid $border-color;
+  font-size: 0.85rem;
+  color: $text-color-light;
 
   img {
     width: 100px;
     height: 100px;
-    @include border-radius(3px);
   }
 
-  #author-info {
+  .author-info {
     @include inline-block;
     width: 50%;
     min-height: 100px;
@@ -372,10 +368,9 @@ abbr[title] {
     }
   }
 
-  #author-bio {
+  .author-bio {
     @include inline-block;
     width: 48%;
-    color: $text-color-light;
   }
 }
 
