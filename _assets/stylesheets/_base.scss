@@ -1,7 +1,6 @@
-/*
- * Fundations
- *
- */
+/* ==========================================================================
+   General - Setting up some base styles
+   ========================================================================== */
 
 html {
   height: 100%;
@@ -9,15 +8,14 @@ html {
   font-family: $sans;
   font-size: $default-font-size;
   line-height: 1.5;
-  text-align: center;
 }
 
 body {
   color: $text-color;
   background-color: $background-color;
-  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
@@ -32,9 +30,8 @@ body {
   text-shadow: none;
 }
 
-/* Links */
 a {
-  @include hover-link;
+  text-decoration: none;
   @include link-colors($primary-color, $text-color);
   @include transition-property(background-color, color);
   @include transition-duration(0.2s);
@@ -43,9 +40,9 @@ a {
   }
 }
 
-/* Headings */
 #{headings()} {
   margin-bottom: 0.5rem;
+  color: $heading-color;
   font-weight: bold;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -70,10 +67,128 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
-/* Text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin: 0 0 1rem 2rem;
+  li {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: square;
+    ul {
+      list-style-type: circle;
+    }
+  }
+}
+
+ul, ol {
+  ul, ol {
+    margin-bottom: 0.5rem;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+    color: $text-color-light;
+  }
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+blockquote {
+  @include box-sizing(border-box);
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $quote-color;
+  border-left: .25rem solid $border-color;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+code, pre {
+  font-family: $mono;
+}
+
+code,{
+  @include inline-block;
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: $code-background-color;
+  @include border-radius(3px);
+}
+
+pre {
+  display: block;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .85rem;
+  line-height: 1.4;
+  background-color: $code-background-color;
+  @include force-wrap;
+  @include word-break(break-all);
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  @include box-sizing(border-box);
+  td, th {
+    padding: .25rem .5rem;
+    border: 1px solid $border-color;
+  }
+  th {
+    font-weight: bold;
+  }
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $code-background-color;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  @include border-radius(3px);
 }
 
 object {
@@ -110,54 +225,10 @@ small {
   color: $text-color-light;
 }
 
-/* Lists */
-ul, ol{
-  margin: 0 0 1rem 2rem;
-  li {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-  }
-}
-
-ul {
-  list-style-type: disc;
-  ul {
-    list-style-type: square;
-  }
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 2rem;
-  margin-bottom: .5rem;
-  color: $text-color-light;
-}
-
-/* Misc */
 mark {
   background-color: $mark-background-color;
   padding: 3px;
   @include box-shadow($mark-background-color, 0, 0, 5px);
-}
-
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
 }
 
 abbr {
@@ -172,86 +243,10 @@ abbr[title] {
   border-bottom: 1px dotted $border-color;
 }
 
-/* Code */
-code, pre {
-  font-family: $mono;
-}
+/* ==========================================================================
+   Custom type
+   ========================================================================== */
 
-pre {
-  display: block;
-  max-width: 100%;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  background-color: $code-background-color;
-  @include force-wrap;
-  @include word-break(break-all);
-  code {
-    padding: 0;
-    font-size: 100%;
-    color: inherit;
-    background-color: transparent;
-  }
-}
-
-code {
-  @include inline-block;
-  padding: .25em .5em;
-  font-size: 85%;
-  color: #bf616a;
-  background-color: $code-background-color;
-  @include border-radius(3px);
-}
-
-kbd {
-  @extend code;
-}
-
-/* Quotes */
-blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: $quote-color;
-  border-left: .25rem solid $border-color;
-}
-
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-/* Images */
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  @include border-radius(3px);
-}
-
-/* Tables */
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid $border-color;
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: .25rem .5rem;
-  border: 1px solid $border-color;
-}
-
-th {
-  font-weight: bold;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: $code-background-color;
-}
-
-/* Custom type */
 .btn {
   @include inline-block;
   padding: 10px 24px;
