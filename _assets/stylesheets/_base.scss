@@ -103,14 +103,16 @@ ol {
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin-left: 2rem;
-    margin-bottom: .5rem;
-    color: $text-color-light;
-  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+  color: $text-color-light;
 }
 
 hr {
@@ -171,17 +173,20 @@ table {
   border: 1px solid $border-color;
   border-collapse: collapse;
   @include box-sizing(border-box);
-  td, th {
-    padding: .25rem .5rem;
-    border: 1px solid $border-color;
-  }
-  th {
-    font-weight: bold;
-  }
-  tbody tr:nth-child(odd) td,
-  tbody tr:nth-child(odd) th {
-    background-color: $code-background-color;
-  }
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid $border-color;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $code-background-color;
 }
 
 img {
