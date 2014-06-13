@@ -280,7 +280,6 @@ abbr[title] {
 
 .footnotes {
   color: $text-color-light;
-  border-bottom: 1px solid $border-color;
 }
 
 /* ==========================================================================
@@ -312,7 +311,6 @@ abbr[title] {
     border-radius: 0;
   }
 }
-
 
 /* ==========================================================================
    Posts & Pages
@@ -346,8 +344,21 @@ abbr[title] {
   @include hyphenation;
 }
 
+.read-more {
+  // TO-DO
+}
+
+/* ==========================================================================
+   Single Post
+   ========================================================================== */
+
+h1.post-title {
+  font-size: 2.5rem;
+}
+
 .post-content {
   max-width: 100%;
+  margin-bottom: 5rem;
 
   >div {
     margin-bottom: 1.5rem;
@@ -373,8 +384,8 @@ abbr[title] {
   }
 }
 
-.read-mor {
-  // TO-DO
+.post-footer {
+
 }
 
 /* ==========================================================================
@@ -404,42 +415,42 @@ abbr[title] {
 }
 
 /* ==========================================================================
-   Author Info
+   User
    ========================================================================== */
 
-.author {
+.user {
   position: relative;
   padding: 3rem 0;
   border-top: 1px solid $border-color;
   font-size: 0.85rem;
   color: $text-color-light;
+  .user-meta {
+    width: 50%;
+  }
+  .user-bio {
+    width: 48%;
+  }
+}
 
-  img {
+.user-meta, .user-bio {
+  @include inline-block;
+}
+
+.user-meta {
+  min-height: 100px;
+  h4 {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+  }
+  .gravatar {
     width: 100px;
     height: 100px;
+    float: left;
+    margin-right: 1.2rem;
+    margin-bottom: 0;
   }
-
-  .author-info {
-    @include inline-block;
-    width: 50%;
-    min-height: 100px;
-    h4 {
-      margin-top: 0.4rem;
-      font-size: 1.2rem;
-    }
-    .gravatar {
-      float: left;
-      margin-right: 1.2rem;
-      margin-bottom: 0;
-    }
-    ul {
-      list-style-type: none;
-    }
-  }
-
-  .author-bio {
-    @include inline-block;
-    width: 48%;
+  ul {
+    list-style-type: none;
   }
 }
 
