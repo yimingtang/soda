@@ -278,8 +278,13 @@ abbr[title] {
   }
 }
 
+.footnotes {
+  color: $text-color-light;
+  border-bottom: 1px solid $border-color;
+}
+
 /* ==========================================================================
-  Third Party Elements
+   Third Party Elements
    ========================================================================== */
 
 .gist {
@@ -306,6 +311,70 @@ abbr[title] {
     background-color: transparent;
     border-radius: 0;
   }
+}
+
+
+/* ==========================================================================
+   Posts & Pages
+   ========================================================================== */
+
+.post, .page {
+  max-width: 680px;
+  margin: 3rem auto 5rem auto;
+  padding: 0 2rem 5rem 2rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.post:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.post-meta {
+  @include inline-block;
+  font-size: .9rem;
+  color: $text-color-light;
+  a {
+    @include link-colors($text-color-light, $text-color);
+  }
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-top: .6rem;
+  margin-bottom: 1rem;
+  @include hyphenation;
+}
+
+.post-content {
+  max-width: 100%;
+
+  >div {
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    min-height: 40px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  iframe, object, video, audio, embed {
+    max-width: 100%;
+  }
+
+  iframe, object {
+    margin: 0 auto 30px auto !important;
+  }
+
+  object {
+    display: block;
+  }
+}
+
+.read-mor {
+  // TO-DO
 }
 
 /* ==========================================================================
@@ -371,63 +440,6 @@ abbr[title] {
   .author-bio {
     @include inline-block;
     width: 48%;
-  }
-}
-
-/* Post & Pages */
-#main>article {
-  margin: 65px auto 0 auto;
-  padding: 0 30px;
-  max-width: 680px;
-  text-align: left;
-
-  time, time a {
-    color: $text-color-light;
-  }
-
-  > header {
-    margin-bottom: 3rem;
-
-    h1 {
-      margin-top: 1.2rem;
-      @include hyphenation;
-    }
-
-    .meta {
-      @include inline-block;
-    }
-  }
-
-  .text {
-    max-width: 100%;
-
-    >div {
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      min-height: 40px;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    iframe, object, video, audio, embed {
-      max-width: 100%;
-    }
-
-    iframe, object {
-      margin: 0 auto 30px auto !important;
-    }
-
-    object {
-      display: block;
-    }
-
-    .footnotes {
-      color: $text-color-light;
-      border-bottom: 1px solid $border-color;
-    }
   }
 }
 
