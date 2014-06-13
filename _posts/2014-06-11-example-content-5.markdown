@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example Content 4
+title: Example Content 5
 date:   2014-06-11 17:56:10
 categories: example
 ---
@@ -9,6 +9,16 @@ categories: example
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </div>
+
+
+# This is H1
+## This is H2
+### This is H3
+#### This is H4
+##### This is H5
+###### This is H6
+
+----
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
@@ -28,8 +38,9 @@ HTML defines a long list of available inline tags, a complete list of which can 
 - Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
 - <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+- <kbd>keyboard</kbd>
 
-Most of these elements are styled by browsers with few modifications on our part.
+Most of these elements are styled by browsers with few modifications on our part[^footnote].
 
 ## Heading
 
@@ -56,7 +67,7 @@ Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna m
 
 Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
 
-{% gist 5555251 gist.md %}
+{% gist 7132203 %}
 
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
 
@@ -65,6 +76,7 @@ Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. N
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
 * Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+  * Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 * Donec id elit non mi porta gravida at eget metus.
 * Nulla vitae elit libero, a pharetra augue.
 
@@ -140,3 +152,5 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 -----
 
 Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
+
+[^footnote]: Handy! Now click the return link to go back.

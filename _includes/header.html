@@ -1,13 +1,11 @@
-<header class="site-header" role="banner">
-  {% if page.id %}
-    {% if page.cover_image_large %}
-      <div class="cover-image-large">
-        <img src="{{ page.cover_image_large }}">
-      </div>
-    {% endif %}
-  {% else %}
+{% if page.id and page.cover_image_large %}
+  <header class="site-header feature-image" role="banner">
+    <img src="{{ page.cover_image_large }}">
+{% else %}
+  <header class="site-header" role="banner">
     <div class="wrap">
       <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <hr>
     </div>
-  {% endif %}
-</header>
+{% endif %}
+  </header>

@@ -1,5 +1,5 @@
 # Site settings
-title: "Soda"
+title: "Soda Theme"
 baseurl: ""
 description: "This is a site description << Soda Theme"
 url: "http://yourdomain.com"
@@ -12,7 +12,7 @@ author:
   email: "yimingnju@gmail.com"
   twitter: "yiming_t"
   github: "yimingtang"
-  bio: "Hi, I'm Yiming."
+  bio: "I'm studying Software Engineering at Nanjing University. I also an iOS developer. <a href='http://lightmail.im'>I made LightMail</a>."
   url: "http://xianqu.org"
 
 
@@ -51,9 +51,9 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-  css_compressor: sass
+  # css_compressor: nil
   js_compressor:  uglifier
-  cache:          false
+  cache:          true
 
 gravatar:
   default_image: mm

@@ -1,0 +1,440 @@
+/*
+ * Fundations
+ *
+ */
+
+html {
+  height: 100%;
+  max-height: 100%;
+  font-family: $sans;
+  font-size: $default-font-size;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+::-moz-selection {
+  color: $text-color;
+  background: #d6edff;
+  text-shadow: none;
+}
+
+::selection {
+  color: $text-color;
+  background: #d6edff;
+  text-shadow: none;
+}
+
+/* Links */
+a {
+  @include hover-link;
+  @include link-colors($primary-color, $text-color);
+  @include transition-property(background-color, color);
+  @include transition-duration(0.2s);
+  strong {
+    color: inherit;
+  }
+}
+
+/* Headings */
+#{headings()} {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+object {
+  display: block;
+}
+
+b, strong {
+  color: $strong-color;
+  font-weight: bold;
+}
+
+em, i, cite {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+sup, sub {
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+small {
+  font-size: 0.8rem;
+  color: $text-color-light;
+}
+
+/* Lists */
+ul, ol{
+  margin: 0 0 1rem 2rem;
+  li {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: square;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+  color: $text-color-light;
+}
+
+/* Misc */
+mark {
+  background-color: $mark-background-color;
+  padding: 3px;
+  @include box-shadow($mark-background-color, 0, 0, 5px);
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted $border-color;
+}
+
+/* Code */
+code, pre {
+  font-family: $mono;
+}
+
+pre {
+  display: block;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  background-color: $code-background-color;
+  @include force-wrap;
+  @include word-break(break-all);
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
+}
+
+code {
+  @include inline-block;
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: $code-background-color;
+  @include border-radius(3px);
+}
+
+kbd {
+  @extend code;
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $quote-color;
+  border-left: .25rem solid $border-color;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  @include border-radius(3px);
+}
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid $border-color;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $code-background-color;
+}
+
+/* Custom type */
+.btn {
+  @include inline-block;
+  padding: 10px 24px;
+  color: $text-color-light;
+  font-weight: bold;
+  background-color: transparent;
+  border: #ebf2f6 2px solid;
+  @include border-radius(50px);
+  @include single-transition(border, 0.3s, ease);
+  &:hover {
+    text-decoration: none;
+    color: $text-color-light;
+    border-color: #9eabb3;
+  }
+}
+
+/* Pagination */
+.pagination {
+  position: relative;
+  max-width: 680px;
+  margin: 3rem auto 4rem auto;
+  font-size: 1rem;
+  color: $text-color-light;
+  span {
+    @include inline-block;
+    padding: 12px 0;
+  }
+  .nav {
+    position: absolute;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+/* Author */
+#author {
+  position: relative;
+  border-top: 1px solid $border-color;
+  padding: 3rem 0;
+  font-size: 0.85rem;
+
+  >div.inner {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 680px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    @include border-radius(3px);
+  }
+
+  #author-info {
+    @include inline-block;
+    width: 50%;
+    min-height: 100px;
+    h4 {
+      margin-top: 0.4rem;
+      font-size: 1.2rem;
+    }
+    .gravatar {
+      float: left;
+      margin-right: 1.2rem;
+      margin-bottom: 0;
+    }
+    ul {
+      list-style-type: none;
+    }
+  }
+
+  #author-bio {
+    @include inline-block;
+    width: 48%;
+    color: $text-color-light;
+  }
+}
+
+
+/* Post & Pages */
+#main>article {
+  margin: 65px auto 0 auto;
+  padding: 0 30px;
+  max-width: 680px;
+  text-align: left;
+
+  time, time a {
+    color: $text-color-light;
+  }
+
+  > header {
+    margin-bottom: 3rem;
+
+    h1 {
+      margin-top: 1.2rem;
+      @include hyphenation;
+    }
+
+    .meta {
+      @include inline-block;
+    }
+  }
+
+  .text {
+    max-width: 100%;
+
+    >div {
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      min-height: 40px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    iframe, object, video, audio, embed {
+      max-width: 100%;
+    }
+
+    iframe, object {
+      margin: 0 auto 30px auto !important;
+    }
+
+    object {
+      display: block;
+    }
+
+    .footnotes {
+      color: $text-color-light;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+body>header {
+  margin-bottom: 80px;
+  border-top: 4px solid $primary-color;
+  >div.wrap {
+    @include inline-block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 80px 100px 10px 100px;
+    font-weight: normal;
+    a {
+      color: $text-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  hr {
+    margin: 0 25%;
+  }
+}
+
+body>header.feature-image {
+  border: none;
+  img {
+    width: 100%;
+    @include border-radius(0);
+  }
+}
+
+body>footer {
+  padding: 56px 30px 40px 30px;
+  border-top: 1px solid #ededee;
+  background-color: $footer-background-color;
+  p, a {
+    font-size: 0.85rem;
+    color: adjust-lightness($text-color-light, 20%);
+  }
+  a {
+    text-decoration: underline;
+  }
+}

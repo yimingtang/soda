@@ -2,6 +2,8 @@
 /* ----------------------------------------------------------*/
 // Import from Poole
 .highlight {
+  margin-bottom: 1rem;
+  pre { margin-bottom: 0; }
   .c { color: #999; } /* Comment */
   .err { color: #a00; background-color: #faa } /* Error */
   .k { color: #069; } /* Keyword */
@@ -62,4 +64,30 @@
   .vg { color: #033 } /* Name.Variable.Global */
   .vi { color: #033 } /* Name.Variable.Instance */
   .il { color: #f60 } /* Literal.Number.Integer.Long */
+}
+
+.gist {
+  .gist-file {
+    font-family: $mono !important;
+    .gist-data {
+      font-size: .8rem !important;
+      line-height: 1.4;
+    }
+  }
+
+  .markdown-body {
+    padding: 15px;
+  }
+
+  pre {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }

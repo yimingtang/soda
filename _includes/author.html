@@ -1,20 +1,24 @@
-<div class="author" role="contentinfo">
-  <div class="author-info">
-    <a href="{{ site.baseurl }}/">{{ site.author.email | gravatar }}</a>
-    <h4>{{ site.author.name }}</h4>
-    <ul>
-      <li>
-        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-      </li>
-      <li>
-        <a href="https://github.com/{{ site.author.github }}">Github<span>{{ site.author.github }}</span></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/{{ site.author.twitter }}">twitter<span>{{ site.author.twitter }}</span></a>
-      </li>
-    </ul>
-  </div>
-  <div class="author-bio">
-    <p class="text">{{ site.author.bio }}</p>
+<div id="author" role="contentinfo">
+  <div class="inner">
+    <div id="author-info">
+      <a href="{{ site.baseurl }}/">{{ site.author.email | gravatar }}</a>
+      <h4>{{ site.author.name }}</h4>
+      <ul>
+        <li>
+          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </li>
+        <li>
+          <span>Github: </span>
+          <a href="https://github.com/{{ site.author.github }}">{{ site.author.github }}</a>
+        </li>
+        <li>
+          <span>twitter: </span>
+          <a href="https://twitter.com/{{ site.author.twitter }}">{{ site.author.twitter }}</a>
+        </li>
+      </ul>
+    </div>
+    <div id="author-bio">
+      <p class="text">{{ site.author.bio }}</p>
+    </div>
   </div>
 </div>

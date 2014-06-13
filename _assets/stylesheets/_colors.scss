@@ -1,7 +1,15 @@
 $primary-color: #0881b3 !default;
 
 $text-color: #21272d !default;
-$text-color-light: #a4adb6 !default;
+$text-color-light: #909396 !default;
+$title-color: $text-color !default;
+$subtitle-color: $text-color !default;
 $link-color: $primary-color !default;
-$border-color: #e5e5e5 !default;
+$strong-color: #303030 !default;
+$quote-color: #7a7a7a !default;
+
 $background-color: #fff !default;
+$code-background-color: #f9f9f9 !default;
+$mark-background-color: #fdffb6 !default;
+$border-color: #e5e5e5 !default;
+$footer-background-color: #f9f9f9 !default;
