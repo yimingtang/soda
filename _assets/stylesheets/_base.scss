@@ -249,7 +249,7 @@ abbr[title] {
 
 .btn {
   @include inline-block;
-  padding: 10px 24px;
+  padding: 0.6rem 1.4rem;
   color: $text-color-light;
   font-weight: bold;
   background-color: transparent;
@@ -263,19 +263,23 @@ abbr[title] {
   }
 }
 
-/* Pagination */
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
 .pagination {
   position: relative;
   max-width: 680px;
-  margin: 3rem auto 4rem auto;
-  font-size: 1rem;
+  margin: 4rem auto;
   color: $text-color-light;
+  text-align: center;
   span {
     @include inline-block;
-    padding: 12px 0;
+    padding: 0.6rem 0;
   }
-  .nav {
+  .pre, .next {
     position: absolute;
+    @include box-sizing(border-box);
   }
   .prev {
     left: 0;

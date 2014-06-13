@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-06-10 17:56:10
 categories: jekyll update
-cover_image: http://placehold.it/660x300
+cover_image: http://placehold.it/680x300
 cover_image_large: http://placehold.it/1366x400
 ---
 
