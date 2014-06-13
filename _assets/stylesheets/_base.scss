@@ -279,6 +279,36 @@ abbr[title] {
 }
 
 /* ==========================================================================
+  Third Party Elements
+   ========================================================================== */
+
+.gist {
+  .gist-file {
+    font-family: $mono;
+    .gist-data {
+      font-size: .8rem;
+      line-height: 1.4;
+    }
+  }
+
+  .markdown-body {
+    padding: 15px;
+  }
+
+  pre {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+/* ==========================================================================
    Pagination
    ========================================================================== */
 

@@ -65,29 +65,3 @@
   .vi { color: #033 } /* Name.Variable.Instance */
   .il { color: #f60 } /* Literal.Number.Integer.Long */
 }
-
-.gist {
-  .gist-file {
-    font-family: $mono;
-    .gist-data {
-      font-size: .8rem;
-      line-height: 1.4;
-    }
-  }
-
-  .markdown-body {
-    padding: 15px;
-  }
-
-  pre {
-    padding: 0;
-    background-color: transparent;
-  }
-
-  code {
-    padding: 0;
-    color: inherit;
-    background-color: transparent;
-    border-radius: 0;
-  }
-}
