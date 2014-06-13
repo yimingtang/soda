@@ -249,6 +249,16 @@ abbr[title] {
 }
 
 /* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.inner {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 680px;
+}
+
+/* ==========================================================================
    Custom type
    ========================================================================== */
 
@@ -339,7 +349,6 @@ abbr[title] {
   }
 }
 
-
 /* Post & Pages */
 #main>article {
   margin: 65px auto 0 auto;
@@ -397,23 +406,26 @@ abbr[title] {
   }
 }
 
-body>header {
-  margin-bottom: 80px;
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.site-header {
+  margin-bottom: 3.5rem;
   border-top: 4px solid $primary-color;
-  >div.wrap {
+  text-align: center;
+
+  .wrap {
     @include inline-block;
     margin: 0 auto;
   }
 
   h1 {
     margin: 0;
-    padding: 80px 100px 10px 100px;
+    padding: 5rem 5rem .6rem 5rem;
     font-weight: normal;
     a {
       color: $text-color;
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 
@@ -422,7 +434,7 @@ body>header {
   }
 }
 
-body>header.feature-image {
+.site-header.feature-image {
   border: none;
   img {
     width: 100%;
@@ -430,15 +442,19 @@ body>header.feature-image {
   }
 }
 
-body>footer {
-  padding: 56px 30px 40px 30px;
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  padding: 3rem 0 2rem 0;
   border-top: 1px solid #ededee;
   background-color: $footer-background-color;
-  p, a {
-    font-size: 0.85rem;
-    color: adjust-lightness($text-color-light, 20%);
-  }
+  color: adjust-lightness($text-color-light, 10%);
+  font-size: 0.85rem;
+  text-align: center;
   a {
+    @include link-colors(adjust-lightness($text-color-light, 10%), $text-color);
     text-decoration: underline;
   }
 }
