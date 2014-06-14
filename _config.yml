@@ -1,20 +1,20 @@
 # Site settings
 title: "Soda Theme"
 subtitle: "I love Soda."
-description: "This is a site description << Soda Theme"
+description: "A short description for Soda."
 url: "http://yourdomain.com"
-baseurl: ""
+baseurl:
 logo:
 cover_image:
 twitter: "yiming_t"
-google_analytics: "UA-XXXXX-X"
+google_analytics:
 
 author:
   name: "Yiming Tang"
   email: "yimingnju@gmail.com"
   twitter: "yiming_t"
   github: "yimingtang"
-  bio: "I'm studying Software Engineering at Nanjing University. I also an iOS developer. <a href='http://lightmail.im'>I made LightMail</a>."
+  bio: "I'm studying Software Engineering at Nanjing University. I'm also an iOS developer. I made <a href=\"http://lightmail.im\">LightMail</a>."
   url: "http://xianqu.org"
 
 # Build settings

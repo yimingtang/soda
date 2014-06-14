@@ -2,7 +2,9 @@
 layout: post
 title: Example Content 2
 date:   2014-06-10 12:56:10
-categories: example
+categories:
+  - Example
+  - Test
 ---
 
 
