@@ -3,15 +3,7 @@
   {% include head.html %}
 <body>
 
-  {% include header.html %}
-
-  <div class="content" role="main">
-    {{ content }}
-  </div>
-
-  {% unless page.id %}
-    {% include user.html %}
-  {% endunless %}
+  {{ content }}
 
   {% include footer.html %}
 

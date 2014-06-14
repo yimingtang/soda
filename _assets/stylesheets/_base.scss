@@ -120,7 +120,6 @@ hr {
   margin: 1.5rem 0;
   border: 0;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
 }
 
 blockquote {
@@ -415,28 +414,28 @@ h1.post-title {
 }
 
 /* ==========================================================================
-   User
+   Author
    ========================================================================== */
 
-.user {
+.author {
   position: relative;
   padding: 3rem 0;
   border-top: 1px solid $border-color;
   font-size: 0.85rem;
   color: $text-color-light;
-  .user-meta {
+  .author-meta {
     width: 50%;
   }
-  .user-bio {
+  .author-bio {
     width: 48%;
   }
 }
 
-.user-meta, .user-bio {
+.author-meta, .author-bio {
   @include inline-block;
 }
 
-.user-meta {
+.author-meta {
   min-height: 100px;
   h4 {
     margin-top: 0.4rem;
@@ -459,34 +458,43 @@ h1.post-title {
    ========================================================================== */
 
 .site-header {
+  width: 100%;
   margin-bottom: 3.5rem;
   border-top: 4px solid $primary-color;
   text-align: center;
+}
 
-  .wrap {
-    @include inline-block;
-    margin: 0 auto;
-  }
-
-  h1 {
-    margin: 0;
-    padding: 5rem 5rem .6rem 5rem;
-    font-weight: normal;
-    a {
-      color: $text-color;
-    }
-  }
-
+.site-header-content {
+  @include inline-block;
   hr {
     margin: 0 25%;
   }
 }
 
-.site-header.feature-image {
+.site-title, .site-subtitle {
+  font-weight: normal;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.2rem;
+  padding: 5rem 5rem .5rem 5rem;
+  a {
+    color: $text-color;
+  }
+}
+
+.site-subtitle {
+  font-size: 1rem;
+}
+
+.site-header.cover {
   border: none;
-  img {
-    width: 100%;
-    @include border-radius(0);
+  .site-title, .site-subtitle {
+    color: #fff;
+    a {
+      color: #fff;
+    }
   }
 }
 

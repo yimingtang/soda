@@ -1,11 +1,14 @@
-{% if page.id and page.cover_image_large %}
-  <header class="site-header feature-image" role="banner">
-    <img src="{{ page.cover_image_large }}">
+{% if site.cover_image %}
+  <header class="site-header cover" style="background-image: url({{ site.cover_image }})">
 {% else %}
-  <header class="site-header" role="banner">
-    <div class="wrap">
-      <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <hr>
-    </div>
+  <header class="site-header">
 {% endif %}
-  </header>
+  <div class="site-header-content inner">
+    {% if site.logo %}
+      <a class="site-logo" href="{{ site.baseurl }}/"><img src="{{ site.logo }}" alt="Site Logo"/></a>
+    {% endif %}
+    <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <hr>
+    <h2 class="site-subtitle">{{ site.subtitle }}</h2>
+  </div>
+</header>

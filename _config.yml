@@ -1,10 +1,13 @@
 # Site settings
 title: "Soda Theme"
+subtitle: "I love Soda."
 description: "This is a site description << Soda Theme"
 url: "http://yourdomain.com"
 baseurl: ""
+logo:
+cover_image:
 twitter: "yiming_t"
-google-analytics: "UA-XXXXX-X"
+google_analytics: "UA-XXXXX-X"
 
 author:
   name: "Yiming Tang"

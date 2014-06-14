@@ -1,24 +1,25 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
-      {% if page.categories %}
-        <span>
-          {{ page.categories | array_to_sentence_string }}
-        </span>
-      {% endif %}
-    </div>
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<div class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+        {% for category in page.categories %}
+          <a href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
+        {% endfor %}
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
 
-  <footer class="post-footer">
-    {% include user.html %}
-  </footer>
-</article>
+    <section class="post-content">
+      {{ content }}
+    </section>
+
+    <footer class="post-footer">
+      {% include author.html %}
+    </footer>
+  </article>
+</div>
