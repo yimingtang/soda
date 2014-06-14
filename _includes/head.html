@@ -20,6 +20,7 @@
       {% assign description = site.description %}
     {% endif %}
     {% assign description = description | strip_html | strip_newlines | escape | truncate: 250 %}
+    <meta name="generator" content="{% jekyll_version %}">
     <meta name="description" content="{{ description }}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
