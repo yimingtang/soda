@@ -499,8 +499,10 @@ h1.post-title {
   border-top: 1px solid #ededee;
   background-color: $footer-background-color;
   color: adjust-lightness($text-color-light, 10%);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-align: center;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   a {
     @include link-colors(adjust-lightness($text-color-light, 10%), $text-color);
     text-decoration: underline;

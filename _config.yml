@@ -1,11 +1,10 @@
 # Site settings
 title: "Soda Theme"
-baseurl: ""
 description: "This is a site description << Soda Theme"
 url: "http://yourdomain.com"
-google-analytics: "UA-XXXXX-X"
-license: "http://creativecommons.org/licenses/by-nc/3.0/"
+baseurl: ""
 twitter: "yiming_t"
+google-analytics: "UA-XXXXX-X"
 
 author:
   name: "Yiming Tang"
@@ -14,7 +13,6 @@ author:
   github: "yimingtang"
   bio: "I'm studying Software Engineering at Nanjing University. I also an iOS developer. <a href='http://lightmail.im'>I made LightMail</a>."
   url: "http://xianqu.org"
-
 
 # Build settings
 exclude:
@@ -60,4 +58,3 @@ gravatar:
   size: 100
   rating: g
   secure: true
-
