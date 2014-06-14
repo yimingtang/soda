@@ -156,7 +156,9 @@ pre {
   font-size: .85rem;
   line-height: 1.4;
   background-color: $code-background-color;
-  @include force-wrap;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   @include word-break(break-all);
   code {
     padding: 0;
