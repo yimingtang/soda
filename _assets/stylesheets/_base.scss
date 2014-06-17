@@ -358,6 +358,17 @@ abbr[title] {
 
 .readmore {
   @include inline-block;
+  font-size: 0.9rem;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust:none;
+  white-space: nowrap;
+  border-bottom: 1px solid $border-color;
+  @include link-colors($text-color-light, $text-color);
+  @include single-box-shadow(white, 0, 0, 14px);
+  @include opacity(0);
+  @include transition-property(opacity, visibility, color);
+  @include transition-duration(0.5s);
 }
 
 .post-item {
@@ -368,6 +379,9 @@ abbr[title] {
   }
   &:last-of-type {
     padding-bottom: 3rem;
+  }
+  &:hover .readmore {
+    @include opacity(1);
   }
 }
 
