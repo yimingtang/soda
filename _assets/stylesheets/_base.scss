@@ -429,14 +429,14 @@ h1.post-title {
 .pagination {
   position: relative;
   max-width: 680px;
-  margin: 4rem auto;
+  margin: 2rem auto 4rem auto;
   color: $text-color-light;
   text-align: center;
   span {
     @include inline-block;
     padding: 0.6rem 0;
   }
-  .pre, .next {
+  .prev, .next {
     position: absolute;
     @include box-sizing(border-box);
   }
