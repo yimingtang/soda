@@ -14,5 +14,8 @@ gem 'sass'
 gem 'uglifier'
 gem 'compass'
 
+# Truncating HTML
+gem 'truncato'
+
 # Markdown
 gem 'redcarpet'

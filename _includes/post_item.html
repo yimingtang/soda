@@ -1,4 +1,4 @@
-<article class="post">
+<article class="post post-item">
   <header class="post-header">
     {% assign post = include.post %}
     {% if post.cover_image %}
@@ -16,6 +16,11 @@
     <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   </header>
   <section class="post-excerpt">
-    {{ post.content | strip_html | truncate: 360 }}
+    {% if site.auto_excerpt_enabled %}
+      {{ post.content | truncate_html }}
+    {% else %}
+      {{ post.excerpt }}
+    {% endif %}
+    <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
   </section>
 </article>

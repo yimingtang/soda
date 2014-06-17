@@ -345,8 +345,26 @@ abbr[title] {
   @include hyphenation;
 }
 
-.read-more {
-  // TO-DO
+.post-excerpt {
+  pre, img, table, hr, iframe, object, audio, video, embed, h1, h2, h3, h4, h5, h6, .gist {
+    display: none !important;
+  }
+
+  p, blockquote, div {
+    display: inline;
+  }
+}
+
+.readmore {
+  @include inline-block;
+}
+
+.post-item {
+  max-width: inherit;
+  .post-header, .post-excerpt {
+    max-width: 680px;
+    margin: 0 auto;
+  }
 }
 
 /* ==========================================================================

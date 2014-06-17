@@ -56,8 +56,20 @@ assets:
   js_compressor:  uglifier
   cache:          true
 
+# Gravatar
 gravatar:
   default_image: mm
   size: 100
   rating: g
   secure: true
+
+# Excerpt
+excerpt_separator: "\n\n"
+
+# If true, we'll ignore any excerpt_separators
+auto_excerpt_enabled: true
+
+auto_excerpt:
+  max_length: 256
+  exclude_tags: ["pre", "img", "table", "hr", "iframe", "object", "audio", "video", "embed", "h1", "h2", "h3", "h4", "h5", "h6", ."gist"]
+  count_tags: false
