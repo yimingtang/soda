@@ -10,9 +10,7 @@ layout: default
     <header class="post-header">
       <div class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
-        {% for category in page.categories %}
-          <a href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
-        {% endfor %}
+        {% include category_links categories = page.categories %}
       </div>
       <h1 class="post-title">{{ page.title }}</h1>
     </header>

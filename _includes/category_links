@@ -1,0 +1,4 @@
+{% for category in include.categories %}
+  {% if forloop.first %}in{% endif %}
+  <a class="category" href="{{ site.baseurl }}/category/{{ category }}/"> {{ category }}</a>{% unless forloop.last %},{% endunless %}
+{% endfor %}

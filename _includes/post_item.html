@@ -8,10 +8,7 @@
     {% endif %}
     <div class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-      {% for category in post.categories %}
-        {% if forloop.first %}in{% endif %}
-        <a class="category" href="{{ site.baseurl }}/category/{{ category }}/"> {{ category }}</a>{% unless forloop.last %},{% endunless %}
-      {% endfor %}
+      {% include category_links categories = post.categories %}
     </div>
     <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   </header>
