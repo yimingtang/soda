@@ -556,6 +556,7 @@ h1.post-title {
    ========================================================================== */
 
 .site-footer {
+  position: relative;
   padding: 3rem 0 2rem 0;
   border-top: 1px solid #ededee;
   background-color: $footer-background-color;
@@ -567,5 +568,38 @@ h1.post-title {
   a {
     @include link-colors(adjust-lightness($text-color-light, 10%), $text-color);
     text-decoration: underline;
+  }
+}
+
+.feed {
+  position: absolute;
+  background: #fff;
+  width: 28px;
+  height: 28px;
+  top: -14px;
+  left: 50%;
+  margin-left: -15px;
+  padding: 0;
+  border: 1px solid #ededee;
+  text-align: center;
+  line-height: 2.4;
+  @include border-radius(20px);
+  @include single-transition(box-shadow, 0.5s);
+
+  span:before {
+    position: absolute;
+    color: #d2dee3;
+    font-size: 10px;
+    top: 9px;
+    left: 9px;
+    font-weight: bold;
+    @include single-transition(color, 0.5s, ease);
+  }
+  &:hover {
+    @include single-box-shadow(rgba(black, 0.05), 0, 0, 0, 3px);
+    @include single-transition(box-shadow, 0.25s);
+    span:before {
+      color: $text-color-light;
+    }
   }
 }
