@@ -52,6 +52,7 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/fonts
   # css_compressor: nil
   js_compressor:  uglifier
   cache:          true

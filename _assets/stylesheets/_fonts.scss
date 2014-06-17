@@ -1,4 +1,29 @@
 $sans: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif: Georgia, "Times New Roman", serif !default;
 $mono: Monaco, Menlo, "Courier New", "Courier", monospace !default;
+$icon: "icons" !default;
 $default-font-size: 16px;
+
+@font-face {
+  font-family: $icon;
+  src:url(asset_path('#{$icon}.eot'));
+  src:url(asset_path('#{$icon}.eot?#iefix')) format('embedded-opentype'),
+      url(asset_path('#{$icon}.woff')) format('woff'),
+      url(asset_path('#{$icon}.ttf')) format('truetype'),
+      url(asset_path('#{$icon}.svg#icons')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: $icon;
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
