@@ -327,6 +327,7 @@ abbr[title] {
 .post:last-of-type {
   border-bottom: none;
   margin-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .post-meta {
@@ -364,6 +365,9 @@ abbr[title] {
   .post-header, .post-excerpt {
     max-width: 680px;
     margin: 0 auto;
+  }
+  &:last-of-type {
+    padding-bottom: 3rem;
   }
 }
 
@@ -429,7 +433,7 @@ h1.post-title {
 .pagination {
   position: relative;
   max-width: 680px;
-  margin: 2rem auto 4rem auto;
+  margin: 3rem auto;
   color: $text-color-light;
   text-align: center;
   span {

@@ -10,7 +10,7 @@ layout: default
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}
-  <div class="pagination" role="navigation">
+  <nav class="pagination" role="navigation">
     {% if paginator.previous_page %}
       <a class="btn nav prev" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
     {% endif %}
@@ -18,7 +18,7 @@ layout: default
     {% if paginator.next_page %}
       <a class="btn nav next" href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older</a>
     {% endif %}
-  </div>
+  </nav>
   {% endif %}
 
   {% include author.html %}
