@@ -504,6 +504,12 @@ h1.post-title {
   ul {
     list-style-type: none;
   }
+  span {
+    margin-right: 4px;
+    &:before {
+      font-size: .9rem;
+    }
+  }
 }
 
 /* ==========================================================================
