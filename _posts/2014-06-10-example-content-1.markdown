@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Example Content 1
-date:   2014-06-10 10:56:10
+date: 2014-06-10 10:56:10
 categories: example
-cover_image: http://placehold.it/660x300
-cover_image_large: http://placehold.it/1366x400
+cover_image: http://placehold.it/1366x400
 ---
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
