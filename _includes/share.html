@@ -1,4 +1,12 @@
 <section class="share">
-  <h4>Share this post</h4>
-  <!-- TODO -->
+  {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
+  <a class="icon-twitter" href="https://twitter.com/share?text={{ page.title | strip_html | strip_newlines }} - {{ site.title }}&amp;url={{ url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    <span aria-hidden="true" data-icon="t"></span>
+  </a>
+  <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    <span aria-hidden="true" data-icon="f"></span>
+  </a>
+  <a class="icon-google-plus" href="https://plus.google.com/share?url={{ url }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+    <span aria-hidden="true" data-icon="+"></span>
+  </a>
 </section>

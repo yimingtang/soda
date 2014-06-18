@@ -425,6 +425,19 @@ h1.post-title {
 
 }
 
+.share {
+  margin-bottom: .5rem;
+  padding: 0 5px;
+  font-size: 1.2rem;
+  text-align: right;
+  a {
+    @include link-colors($text-color-light, $text-color);
+    span {
+      margin: 0 3px;
+    }
+  }
+}
+
 /* ==========================================================================
    Category archive
    ========================================================================== */
