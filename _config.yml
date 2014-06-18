@@ -8,6 +8,7 @@ logo:
 cover_image:
 twitter: "yiming_t"
 google_analytics:
+disqus_shortname: xianqu
 
 author:
   name: "Yiming Tang"

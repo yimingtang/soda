@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-06-10 17:56:10
+title: "Welcome to Jekyll!"
+date: 2014-06-10 17:56:10
+comments: true
 categories: jekyll update
 cover_image: http://placehold.it/1920x1080
 ---

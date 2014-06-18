@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Example Content 5
-date:   2014-06-11 17:56:10
+date: 2014-06-11 17:56:10
 categories: example
+comments: true
 ---
 
 
