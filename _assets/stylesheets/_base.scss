@@ -475,6 +475,8 @@ h1.post-title {
   padding: 3rem 0;
   border-top: 1px solid $border-color;
   font-size: 0.85rem;
+  -webkit-text-adjust-size: none;
+  -ms-text-adjust-size: none;
   color: $text-color-light;
   .author-meta {
     width: 50%;
