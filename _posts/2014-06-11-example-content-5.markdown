@@ -4,6 +4,7 @@ title: Example Content 5
 date: 2014-06-11 17:56:10
 categories: example
 comments: true
+cover_image: http://yiming.ghost.io/content/images/2014/Jun/wallpaper-1666008.jpg
 ---
 
 
