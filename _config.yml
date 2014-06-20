@@ -28,6 +28,10 @@ exclude:
 permalink: /:year/:month/:title
 paginate: 5
 
+# Plugins
+gems:
+  - jekyll-sitemap
+
 # Markdown
 markdown: redcarpet
 

@@ -8,6 +8,9 @@ gem 'rake'
 # Jelyll
 gem 'jekyll'
 
+# Sitemap generator
+gem 'jekyll-sitemap'
+
 # Assets
 gem 'jekyll-assets'
 gem 'sass'
