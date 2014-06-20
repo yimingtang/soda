@@ -7,10 +7,9 @@ comments: true
 cover_image: /images/post-cover-image-1.jpg
 ---
 
+Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 
-<div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
+<iframe width="560" height="315" src="//www.youtube.com/embed/9LfmrkyP81M" frameborder="0" allowfullscreen></iframe>
 
 
 # This is H1
