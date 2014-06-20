@@ -28,6 +28,10 @@ exclude:
 permalink: /:year/:month/:title
 paginate: 5
 
+# Tags and categories
+category_dir: "category"
+tag_dir: "tag"
+
 # Plugins
 gems:
   - jekyll-sitemap

@@ -3,6 +3,7 @@ layout: post
 title: Example Content 5
 date: 2014-06-11 17:56:10
 categories: example
+tags: example
 comments: true
 cover_image: /images/post-cover-image-1.jpg
 ---
