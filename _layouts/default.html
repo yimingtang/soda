@@ -9,14 +9,13 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="{% asset_path vendor/jquery-1.11.1.min %}"><\/script>')</script>
-  {% if page.cover_image %}
-    {% javascript vendor/skrollr.min %}
-    <script type="text/javascript">
-      $(function() {
-        var s = skrollr.init();
-      });
-    </script>
+
+  {% if page.id and page.cover_image %}
+    {% include skrollr.html %}
+  {% elsif page.id == nil and site.cover_image %}
+    {% include skrollr.html %}
   {% endif %}
+
   {% javascript app %}
 
   {% if site.google_analytics %}

@@ -3,7 +3,7 @@ layout: post
 title: Example Content 1
 date: 2014-06-10 10:56:10
 categories: example
-cover_image: http://placehold.it/1366x400
+cover_image: /images/post-cover-image-3.jpg
 ---
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.

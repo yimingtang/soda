@@ -4,7 +4,7 @@ title: "Welcome to Jekyll!"
 date: 2014-06-10 17:56:10
 comments: true
 categories: jekyll update
-cover_image: http://yiming.ghost.io/content/images/2014/Jun/wallpaper-1666008.jpg
+cover_image: /images/post-cover-image-2.png
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

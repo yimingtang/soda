@@ -1,11 +1,11 @@
 # Site settings
-title: "Soda Theme"
-subtitle: "I love Soda."
+title: "Soda"
+subtitle: "Yet another Jekyll site"
 description: "A short description for Soda."
 url: "http://yourdomain.com"
 baseurl:
 logo:
-cover_image:
+cover_image: "/images/site-cover-image.png"
 twitter: "yiming_t"
 google_analytics:
 disqus_shortname:
@@ -72,6 +72,7 @@ excerpt_separator: "\n\n"
 # If true, we'll ignore any excerpt_separators
 auto_excerpt_enabled: true
 
+# Auto excerpt configuration
 auto_excerpt:
   max_length: 256
   exclude_tags: ["pre", "img", "table", "hr", "iframe", "object", "audio", "video", "embed", "h1", "h2", "h3", "h4", "h5", "h6", ."gist"]

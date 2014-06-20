@@ -261,6 +261,11 @@ abbr[title] {
   max-width: 680px;
 }
 
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* ==========================================================================
    Custom type
    ========================================================================== */
@@ -544,6 +549,7 @@ h1.post-title {
    ========================================================================== */
 
 .site-header {
+  display: table;
   width: 100%;
   margin-bottom: 3.5rem;
   border-top: 4px solid $primary-color;
@@ -574,13 +580,24 @@ h1.post-title {
   font-size: 1rem;
 }
 
-.site-header.cover {
+.site-header.cover-image-top {
   border: none;
-  .site-title, .site-subtitle {
-    color: #fff;
+
+
+  .site-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-top: 0;
+    @include single-box-shadow(0, 1px, 6px, rgba(black, 0.1));
     a {
       color: #fff;
     }
+  }
+
+  .site-subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+    @include single-box-shadow(0, 1px, 6px, rgba(black, 0.1));
   }
 }
 
