@@ -11,6 +11,7 @@ layout: default
 <div class="content" role="main">
   <article class="post">
     <header class="post-header">
+      <a class="btn home" href="{{ site.baseurl }}/"><span aria-hidden="true" data-icon="«"></span></a>
       <div class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
         {% include category_links categories = page.categories %}
