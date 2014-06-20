@@ -605,7 +605,7 @@ h1.post-title {
     font-weight: bold;
     font-size: 3.5rem;
     padding-top: 0;
-    @include single-box-shadow(0, 1px, 6px, rgba(black, 0.1));
+    @include single-box-shadow(rgba(black, 0.1), 0, 1px, 6px);
     a {
       color: #fff;
     }
@@ -614,7 +614,7 @@ h1.post-title {
   .site-subtitle {
     font-size: 1.5rem;
     color: #fff;
-    @include single-box-shadow(0, 1px, 6px, rgba(black, 0.1));
+    @include single-box-shadow(rgba(black, 0.1), 0, 1px, 6px);
   }
 }
 
