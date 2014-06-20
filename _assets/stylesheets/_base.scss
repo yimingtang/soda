@@ -522,16 +522,24 @@ h1.post-title {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   color: $text-color-light;
-  .author-meta {
-    width: 50%;
-  }
-  .author-bio {
-    width: 48%;
-  }
 }
 
 .author-meta, .author-bio {
   @include inline-block;
+}
+
+.author-meta {
+  width: 50%;
+}
+
+.author-bio {
+  width: 48%;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0;
 }
 
 .author-meta {
@@ -541,11 +549,8 @@ h1.post-title {
     font-size: 1.2rem;
   }
   .avatar {
-    width: 100px;
-    height: 100px;
     float: left;
     margin-right: 1.2rem;
-    margin-bottom: 0;
   }
   ul {
     list-style-type: none;

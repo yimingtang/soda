@@ -1,1 +1,80 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 960px) {
+  .cover-image-top {
+    height: 50%;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .cover-image-top {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .pagination {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .author-bio, .author-meta {
+    display: block;
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  html {
+    font-size: $default-font-size - 2px;
+  }
+
+  .inner {
+    padding: 0 20px;
+  }
+
+  .post {
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    &:last-of-type {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .pagination {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .author {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .cover-image-top {
+    height: 30%;
+  }
+
+  .inner {
+    padding: 0 15px;
+  }
+
+  .pagination {
+    margin: 28px 20px;
+  }
+
+  .post {
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h1.post-title {
+    font-size: 2.2rem;
+  }
+}
