@@ -24,6 +24,7 @@ exclude:
   - README.markdown
   - Gemfile
   - Gemfile.lock
+  - LICENSE
 
 permalink: /:year/:month/:title
 paginate: 5
