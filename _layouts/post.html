@@ -6,6 +6,8 @@ layout: default
   <header class="cover-image-top" style="background-image: url('{{ page.cover_image }}')" data-top-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 70%;">
     <div class="curtain" data-top-top="opacity: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);" data-top-bottom="opacity: 0.8; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8);"></div>
   </header>
+{% else %}
+  <header class="site-header"></header>
 {% endif %}
 
 <div class="content" role="main">
