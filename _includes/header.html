@@ -6,7 +6,7 @@
   <div class="vertical">
     <div class="site-header-content inner" {% if site.cover_image %}data-top-top="opacity: 1; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=1);" data-top-bottom="opacity: 0.2; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.2);"{% endif %}>
       {% if site.logo %}
-        <a class="site-logo" href="{{ site.baseurl }}/"><img src="{{ site.logo }}" alt="Site Logo"></a>
+        <a class="site-logo" href="{{ site.baseurl }}/"><img src="{{ site.logo | asset_path }}" alt="Site Logo"></a>
       {% endif %}
       <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
       <hr>

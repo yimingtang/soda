@@ -581,6 +581,12 @@ h1.post-title {
   }
 }
 
+.site-logo img {
+  max-height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
 .site-title, .site-subtitle {
   font-weight: normal;
 }
