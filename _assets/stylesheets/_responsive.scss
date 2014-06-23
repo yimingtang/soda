@@ -2,15 +2,11 @@
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 960px) {
-  .cover-image-top {
-    height: 50%;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  .cover-image-top {
-    height: 40%;
-  }
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -56,10 +52,6 @@
 
 
 @media only screen and (max-width: 480px) {
-  .cover-image-top {
-    height: 30%;
-  }
-
   .inner {
     padding: 0 15px;
   }

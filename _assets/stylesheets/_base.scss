@@ -413,6 +413,7 @@ abbr[title] {
   height: 100%;
   width: 100%;
   background-color: #000;
+  @include opacity(0);
 }
 
 .btn.home {

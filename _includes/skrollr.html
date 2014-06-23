@@ -1,4 +1,6 @@
 {% javascript vendor/skrollr.min.js %}
 <script type="text/javascript">
-  var s = skrollr.init();
+  if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init();
+  }
 </script>
