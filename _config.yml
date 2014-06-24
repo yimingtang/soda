@@ -23,7 +23,7 @@ author:
 
 # Build settings
 exclude:
-  - README.markdown
+  - README.md
   - Gemfile
   - Gemfile.lock
   - LICENSE
