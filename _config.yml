@@ -1,19 +1,21 @@
 # Site settings
-title: "Soda"
-subtitle: "Yet another Jekyll site"
-description: "A short description for Soda."
+title: "Soda"                         # The title of the site.
+subtitle: "Yet another Jekyll site"   # The subtile of the site.
+description:                          # A short description of the site.
 url: "http://yourdomain.com"
-baseurl:
-logo:
-cover_image: "/images/site-cover-image.png"
-twitter: "yiming_t"
-google_analytics:
-disqus_shortname:
+baseurl:                              # Serve the website from the given base URL. Only works for local debugging.
+logo:                                 # The logo image for the site. Put it under assets/images/ directory.
+                                      # The value should be its file name, e.g. "logo.png"
+cover_image: "/images/site-cover-image.png" # The cover image path for the site.
+twitter: "yiming_t"                   # The twitter ID for the site, if you have.
+google_analytics:                     # Your Google Analytics ID. e.g. "UA-XXXXX-X".
+disqus_shortname:                     # Your Disqus short name, if you want to use Disqus as comment system.
 
+# Author details. Single author currently.
 author:
   name: "Yiming Tang"
   email: "yimingnju@gmail.com"
-  avatar: "avatar.jpeg"
+  avatar: "avatar.jpeg"               # If you want to use a local avatar image, put it under `assets/images/`. Otherwise, Soda uses the image from Gravatar.
   twitter: "yiming_t"
   github: "yimingtang"
   bio: "I'm studying Software Engineering at Nanjing University. I'm also an iOS developer. I made <a href=\"http://lightmail.im\">LightMail</a>."
@@ -25,21 +27,23 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - Rakefile
 
-permalink: /:year/:month/:title
-paginate: 5
+permalink: /:year/:month/:title   # Permalink format
+paginate: 5                       # Number of posts per page
 
 # Tags and categories
-category_dir: "category"
+category_dir: "category"          # The URL may look like this: http://yourdomain/category/this-a-category/
 tag_dir: "tag"
 
-# Plugins
+# Put plugins here
 gems:
   - jekyll-sitemap
 
 # Markdown
 markdown: redcarpet
 
+# https://github.com/vmg/redcarpet
 redcarpet:
   extensions:
     - autolink
@@ -57,31 +61,34 @@ redcarpet:
 # Syntax highlighter
 highlighter: pygments
 
-# Assets
+# Excerpt
+excerpt_separator: "\n\n"
+
+# Jekyll-Assets
+# https://github.com/ixti/jekyll-assets
 assets:
   sources:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/fonts
-  # css_compressor: nil
+  css_compressor: sass
   js_compressor:  uglifier
   cache:          true
 
 # Gravatar
+# For more details, refer to https://en.gravatar.com/site/implement/images/
 gravatar:
   default_image: mm
   size: 100
   rating: g
   secure: true
 
-# Excerpt
-excerpt_separator: "\n\n"
-
-# If true, we'll ignore any excerpt_separators
+# If true, we'll ignore any excerpt_separators and generate excerpt automatically. See `auto_excerpt` below.
 auto_excerpt_enabled: true
 
 # Auto excerpt configuration
+# https://github.com/jorgemanrubia/truncato
 auto_excerpt:
   max_length: 256
   exclude_tags: ["pre", "img", "table", "hr", "iframe", "object", "audio", "video", "embed", "h1", "h2", "h3", "h4", "h5", "h6", ".gist"]
