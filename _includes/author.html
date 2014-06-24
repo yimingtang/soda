@@ -10,18 +10,24 @@
       </a>
       <h4>{{ site.author.name }}</h4>
       <ul>
-        <li>
-          <span aria-hidden="true" data-icon="m"></span>
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-        </li>
-        <li>
-          <span aria-hidden="true" data-icon="g"></span>
-          <a href="https://github.com/{{ site.author.github }}">{{ site.author.github }}</a>
-        </li>
-        <li>
-          <span aria-hidden="true" data-icon="t"></span>
-          <a href="https://twitter.com/{{ site.author.twitter }}">{{ site.author.twitter }}</a>
-        </li>
+        {% if site.author.email %}
+          <li>
+            <span aria-hidden="true" data-icon="m"></span>
+            <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+          </li>
+        {% endif %}
+        {% if site.author.github %}
+          <li>
+            <span aria-hidden="true" data-icon="g"></span>
+            <a href="https://github.com/{{ site.author.github }}">{{ site.author.github }}</a>
+          </li>
+        {% endif %}
+        {% if site.author.twitter %}
+          <li>
+            <span aria-hidden="true" data-icon="t"></span>
+            <a href="https://twitter.com/{{ site.author.twitter }}">{{ site.author.twitter }}</a>
+          </li>
+        {% endif %}
       </ul>
     </section>
     <section class="author-bio">
