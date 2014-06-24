@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
-date: 2014-06-10 17:56:10
+date: 2014-06-20 17:56:10
 comments: true
-categories: jekyll update
-cover_image: /images/post-cover-image-2.png
+categories:
+  - jekyll
+  - update
+cover_image: "/images/post-cover-image-2.png"
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
