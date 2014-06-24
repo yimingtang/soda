@@ -7,7 +7,7 @@ ssh_user       = "user@domain.com"
 ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
-rsync_args     = "" # Any extra arguments to pass to rsync
+rsync_args     = ""                 # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
 # Misc
@@ -20,7 +20,6 @@ post_ext = "markdown"
 #
 # Overview
 #
-
 desc "List tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
@@ -31,7 +30,6 @@ end
 #
 # Posts
 #
-
 desc "Create a post"
 task :create_post, :title do |t, args|
   if args.title
@@ -63,7 +61,6 @@ end
 #
 # Build and preview site
 #
-
 desc "Cleanup cache files"
 task :clean do
   system "rm -rf #{public_dir}"
@@ -85,7 +82,6 @@ end
 #
 # Deploy
 #
-
 desc "Deploy jekyll site via rsync"
 task :deploy => :build do
   exclude = ""
@@ -96,15 +92,10 @@ task :deploy => :build do
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
 end
 
-#
-# All
-#
-
 
 #
 # Helper methods
 #
-
 def ok_failed(condition)
   if (condition)
     puts "OK"
