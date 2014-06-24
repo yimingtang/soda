@@ -28,6 +28,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - Rakefile
+  - rsync-exclude
 
 permalink: /:year/:month/:title   # Permalink format
 paginate: 5                       # Number of posts per page
