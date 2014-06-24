@@ -14,11 +14,6 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-
-  .author-bio, .author-meta {
-    display: block;
-    width: inherit;
-  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -47,6 +42,11 @@
   .author {
     padding-top: 2.5rem;
     padding-bottom: 1rem;
+  }
+
+  .author-bio, .author-meta {
+    display: block;
+    width: inherit;
   }
 }
 

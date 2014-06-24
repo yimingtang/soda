@@ -555,6 +555,9 @@ h1.post-title {
   ul {
     list-style-type: none;
   }
+  li {
+    @include ellipsis;
+  }
   span {
     margin-right: 4px;
     &:before {
