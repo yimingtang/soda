@@ -1,0 +1,1 @@
+$(function(){$(".post-content").fitVids()});
