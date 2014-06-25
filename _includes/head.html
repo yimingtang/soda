@@ -26,15 +26,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
     {% stylesheet screen %}
-    <link rel="icon" type="image/x-icon" href="{% asset_path favicon.ico %}">
-    <link rel="apple-touch-icon" href="{% asset_path touch-icon-iphone.png %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path touch-icon-ipad.png %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path touch-icon-iphone-retina.png %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path touch-icon-ipad-retina.png %}">
+    <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | asset_path }}">
+    <link rel="apple-touch-icon" href="{{ 'touch-icon-iphone.png' | asset_path }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ 'touch-icon-ipad.png' | asset_path }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ 'touch-icon-iphone-retina.png' | asset_path }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ 'touch-icon-ipad-retina.png' | asset_path }}">
 
-    {% if page.cover_image_large %}
+    {% if page.cover_image %}
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image:src" content="{{ page.cover_image_large }}">
+      <meta name="twitter:image:src" content="{{ site.baseurl }}{{ page.cover_image }}">
     {% else %}
       <meta name="twitter:card" content="summary">
     {% endif %}
@@ -59,7 +59,7 @@
       <meta property="og:type" content="website">
     {% endif %}
     <meta  property="og:description" content="{{ description }}">
-    {% if page.cover_image_large %}
-      <meta property="og:image" content="{{ page.cover_image_large }}">
+    {% if page.cover_image %}
+      <meta property="og:image" content="{{ site.baseurl }}{{ page.cover_image }}">
     {% endif %}
 </head>

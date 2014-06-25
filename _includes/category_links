@@ -1,4 +1,10 @@
+{% if site.category_dir %}
+  {% assign category_dir = site.category_dir %}
+{% else %}
+  {% assign category_dir = "categories" %}
+{% endif %}
+
 {% for category in include.categories %}
   {% if forloop.first %}in{% endif %}
-  <a class="category" href="{{ site.baseurl }}/category/{{ category }}/"> {{ category }}</a>{% unless forloop.last %},{% endunless %}
+  <a class="category" href="{{ site.baseurl }}/{{ category_dir }}/{{ category }}/"> {{ category }}</a>{% unless forloop.last %},{% endunless %}
 {% endfor %}

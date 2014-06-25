@@ -3,14 +3,14 @@
     {% assign post = include.post %}
     {% if site.cover_image == null and post.cover_image %}
       <div class="cover-image">
-        <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.cover_image }}"></a>
+        <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}{{ post.cover_image }}"></a>
       </div>
     {% endif %}
     <div class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
       {% include category_links categories = post.categories %}
     </div>
-    <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   </header>
   <section class="post-excerpt">
     {% if site.auto_excerpt_enabled %}
