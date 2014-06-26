@@ -3,8 +3,8 @@
   <channel>
     <title>Soda</title>
     <description></description>
-    <link>http://yimingtang.github.com/soda/</link>
-    <atom:link href="http://yimingtang.github.com/soda/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://yimingtang.github.com/</link>
+    <atom:link href="http://yimingtang.github.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -22,8 +22,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&amp;rsquo;s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Jun 2014 01:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/06/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/06/welcome-to-jekyll</guid>
+        <link>http://yimingtang.github.com/2014/06/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/06/welcome-to-jekyll</guid>
       </item>
     
       <item>
@@ -207,8 +207,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 19 Jun 2014 01:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/06/example-content-5</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/06/example-content-5</guid>
+        <link>http://yimingtang.github.com/2014/06/example-content-5</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/06/example-content-5</guid>
       </item>
     
       <item>
@@ -354,8 +354,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Jun 2014 03:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/06/example-content-4</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/06/example-content-4</guid>
+        <link>http://yimingtang.github.com/2014/06/example-content-4</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/06/example-content-4</guid>
       </item>
     
       <item>
@@ -501,8 +501,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Jun 2014 22:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/06/example-content-3</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/06/example-content-3</guid>
+        <link>http://yimingtang.github.com/2014/06/example-content-3</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/06/example-content-3</guid>
       </item>
     
       <item>
@@ -648,8 +648,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jun 2014 20:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/06/example-content-2</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/06/example-content-2</guid>
+        <link>http://yimingtang.github.com/2014/06/example-content-2</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/06/example-content-2</guid>
       </item>
     
       <item>
@@ -795,8 +795,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 May 2014 18:56:10 +0800</pubDate>
-        <link>http://yimingtang.github.com/soda/2014/05/example-content-1</link>
-        <guid isPermaLink="true">http://yimingtang.github.com/soda/2014/05/example-content-1</guid>
+        <link>http://yimingtang.github.com/2014/05/example-content-1</link>
+        <guid isPermaLink="true">http://yimingtang.github.com/2014/05/example-content-1</guid>
       </item>
     
   </channel>
