@@ -1,7 +1,7 @@
 <section class="author" role="contentinfo">
   <div class="inner">
     <section class="author-meta">
-      <a href="{{ site.baseurl }}/">
+      <a href="{% if site.author.url %}{{ site.author.url }}{% else %}{{ site.baseurl }}/{% endif %}">
         {% if site.author.avatar %}
           <img src="{{ site.author.avatar | asset_path }}" class="avatar">
         {% else %}
