@@ -8,7 +8,7 @@ Soda is a blogging framework built on [Jekyll](http://jekyllrb.com/).
 
 Soda runs on [Jekyll](https://github.com/jekyll/jekyll), a blog-aware, static site generator in Ruby. I'm using Ruby 2.1.1 locallly. You can run the site with:
 
-```
+``` sh
 $ cd path/to/soda
 $ gem install bundler # if you haven't installed Bundler
 $ bundle install
@@ -53,10 +53,52 @@ It will start a web server. The default server address is `http://localhost:4000
 
 ### Deployment
 
-Currently, Soda uses [rsync](http://rsync.samba.org/) as a deployment method. You must edit the configuration part of the Rakefile to meet your needs. Afterwards, run:
+Soda provides two deployment methods currently. They are rsync and GitHub Pages. Edit the configuration part of the Rakefile before you start.
+
+#### rsync
 
 ```
-$ rake deploy
+$ rake deploy:rsync
+```
+
+#### GitHub Pages
+
+```
+$ rake deploy:github
+```
+
+For user and orgnization pages, the Rakefile looks like this:
+
+``` ruby
+# GitHub pages configuration
+github_user = "username"
+github_project = "" # Leave this variable empty if you're using user or organization pages
+deploy_branch = "master"
+```
+
+For project pages:
+
+``` ruby
+# GitHub pages configuration
+github_user = "username"
+github_project = "project"
+deploy_branch = "gh-pages" # For project pages, replace it with "gh-pages"
+```
+
+One more setp, edit the `_config.yml`.
+
+``` yaml
+...
+
+url: "http://username.github.io"
+baseurl: "" # Replace it with your project name if you are going to use pages for project
+
+...
+
+assets:
+  baseurl: "/assets/" # "/project/assets/" for the same reseason.
+
+...
 ```
 
 #### Other Deployment Methods
