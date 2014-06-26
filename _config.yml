@@ -1,26 +1,26 @@
 # Site settings
 title: "Soda"                         # The title of the site.
 subtitle: "Yet another Jekyll site"   # The subtile of the site.
-description:                          # A short description of the site.
+description: "A bloggin website"      # A short description of the site.
 url: "http://yourdomain.com"
 baseurl: ""                           # Serve the website from the given base URL.
                                       # NOTE: you should also change assets base url if you modified this variable
 logo:                                 # The logo image for the site. Put it under assets/images/ directory.
                                       # The value should be its file name, e.g. "logo.png"
-cover_image: "/images/site-cover-image.png" # The cover image path for the site.
-twitter: "yiming_t"                   # The twitter ID for the site, if you have.
+cover_image:                          # The cover image path for the site.
+twitter:                              # The twitter ID for the site, if you have.
 google_analytics:                     # Your Google Analytics ID. e.g. "UA-XXXXX-X".
 disqus_shortname:                     # Your Disqus short name, if you want to use Disqus as comment system.
 
 # Author details. Single author currently.
 author:
-  name: "Yiming Tang"
-  email: "yimingnju@gmail.com"
-  avatar: "avatar.jpeg"               # If you want to use a local avatar image, put it under `assets/images/`. Otherwise, Soda uses the image from Gravatar.
-  twitter: "yiming_t"
-  github: "yimingtang"
-  bio: "I'm studying Software Engineering at Nanjing University. I'm also an iOS developer. I made <a href=\"http://lightmail.im\">LightMail</a>."
-  url: "http://xianqu.org"
+  name: "Your Name"
+  email: "user@example.com"
+  avatar:                             # If you want to use a local avatar image, put it under `assets/images/`. Otherwise, Soda uses the image from Gravatar.
+  twitter:
+  github:
+  bio: "A short description of the author"
+  url: "http://yourdomain.com"
 
 # Build settings
 exclude:
@@ -30,12 +30,13 @@ exclude:
   - LICENSE
   - Rakefile
   - rsync-exclude
+  - _config_example.yml
 
-permalink: /:year/:month/:title   # Permalink format
-paginate: 5                       # Number of posts per page
+permalink: /:year/:month/:title     # Permalink format
+paginate: 5                         # Number of posts per page
 
 # Tags and categories
-category_dir: "category"          # The URL may look like this: http://yourdomain/category/this-a-category/
+category_dir: "category"            # The URL may look like this: http://yourdomain/category/this-a-category/
 tag_dir: "tag"
 
 # Put plugins here
@@ -70,11 +71,11 @@ excerpt_separator: "\n\n"
 # https://github.com/ixti/jekyll-assets
 assets:
   sources:
+    - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _assets/fonts
-  baseurl: /assets/               # Be careful if the site baseurl is set.
+  baseurl: /assets/                   # Be careful if the site baseurl is set.
   css_compressor: sass
   js_compressor:  uglifier
   cache:          true
