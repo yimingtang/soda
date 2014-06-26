@@ -3,7 +3,8 @@ title: "Soda"                         # The title of the site.
 subtitle: "Yet another Jekyll site"   # The subtile of the site.
 description:                          # A short description of the site.
 url: "http://yourdomain.com"
-baseurl:                              # Serve the website from the given base URL. Only works for local debugging.
+baseurl: ""                           # Serve the website from the given base URL.
+                                      # NOTE: you should also change assets base url if you modified this variable
 logo:                                 # The logo image for the site. Put it under assets/images/ directory.
                                       # The value should be its file name, e.g. "logo.png"
 cover_image: "/images/site-cover-image.png" # The cover image path for the site.
@@ -73,6 +74,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/fonts
+  baseurl: /assets/               # Be careful if the site baseurl is set.
   css_compressor: sass
   js_compressor:  uglifier
   cache:          true
