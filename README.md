@@ -68,7 +68,7 @@ Soda can be deployed in a large number of ways due to the static nature of the g
 
 ### Assets
 
-Soda uses [jekyll-assets](https://github.com/ixti/jekyll-assets), assets pipeline plugin for Jekyll, to manage its assets. If you are familiar with Rails, you must know what I'm talking about. With this poweful plugin, writing Soda becomes much easier.
+Soda uses [jekyll-assets](https://github.com/ixti/jekyll-assets), assets pipeline plugin for Jekyll, to manage its assets. If you are familiar with Rails, you must know what I'm talking about. With this poweful plugin, writing Soda becomes much easier. Have a look.
 
 #### Stylesheets
 
@@ -88,6 +88,8 @@ There are 3 main Javascripts: jQuery.js, [FitVids.js](https://github.com/davatro
 #### Images
 
 All the site related image content is placed under `_assets/images/`. You may want to use you own artworks. One thing you should beware of is that any images which appear in posts ought to be placed under `images/` directory or just URL links. Keeping the site content in `_post/` and `images` makes life easier.
+
+**NOTE:** If you prefer putting your images under `_assets/images/` directory. Use the Liquid tag `{% image 'your-image.jpg' %}` or the corresponding filter `{{ 'your-image.jpg' | image }}` in your source files (either HTML or markdown file). To get the relative path, invoke `{% asset_path 'your-image.jpg' %}` or `{{ 'your-image.jpg' | asset_path }}`.
 
 #### Fonts
 
