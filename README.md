@@ -6,7 +6,7 @@ Soda is a blogging framework built on [Jekyll](http://jekyllrb.com/).
 
 ## Running Locally
 
-Soda runs on [Jekyll](https://github.com/jekyll/jekyll), a blog-aware, static site generator in Ruby. I'm using Ruby 2.1.1 locallly. You can run the site with:
+Soda runs on [Jekyll](https://github.com/jekyll/jekyll), a blog-aware, static site generator in Ruby. I'm using Ruby 2.1.1 locally. You can run the site with:
 
 ``` sh
 $ cd path/to/soda
