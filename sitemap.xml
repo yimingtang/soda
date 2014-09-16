@@ -3,83 +3,68 @@
   
   
   <url>
-    <loc>http://yimingtang.github.com/2014/06/welcome-to-jekyll</loc>
+    <loc>http://yourdomain.com/2014/06/welcome-to-jekyll</loc>
+    
     <lastmod>2014-06-21T01:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/2014/06/example-content-5</loc>
+    <loc>http://yourdomain.com/2014/06/example-content-5</loc>
+    
     <lastmod>2014-06-19T01:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/2014/06/example-content-4</loc>
+    <loc>http://yourdomain.com/2014/06/example-content-4</loc>
+    
     <lastmod>2014-06-16T03:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/2014/06/example-content-3</loc>
+    <loc>http://yourdomain.com/2014/06/example-content-3</loc>
+    
     <lastmod>2014-06-11T22:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/2014/06/example-content-2</loc>
+    <loc>http://yourdomain.com/2014/06/example-content-2</loc>
+    
     <lastmod>2014-06-01T20:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/2014/05/example-content-1</loc>
+    <loc>http://yourdomain.com/2014/05/example-content-1</loc>
+    
     <lastmod>2014-05-10T18:56:10+08:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   
   <url>
-    <loc>http://yimingtang.github.com/about/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
+    <loc>http://yourdomain.com/about/</loc>
+    <lastmod>2014-09-16T16:39:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://yimingtang.github.com/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
+    <loc>http://yourdomain.com/</loc>
+    <lastmod>2014-09-16T16:39:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <url>
-    <loc>http://yimingtang.github.com/category/example/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://yimingtang.github.com/category/test/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://yimingtang.github.com/category/jekyll/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://yimingtang.github.com/category/update/</loc>
-    <lastmod>2014-06-26T16:02:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
   
   
 </urlset>
