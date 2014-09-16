@@ -377,7 +377,7 @@ abbr[title] {
   white-space: nowrap;
   border-bottom: 1px solid $border-color;
   @include link-colors($text-color-light, $text-color);
-  @include single-box-shadow(white, 0, 0, 14px);
+  @include single-box-shadow(0, 0, 14px, white);
   @include opacity(0);
   @include transition-property(opacity, visibility, color);
   @include transition-duration(0.5s);
@@ -672,7 +672,7 @@ h1.post-title {
   }
 
   &:hover {
-    @include single-box-shadow(rgba(black, 0.05), 0, 0, 0, 3px);
+    @include single-box-shadow(0, 0, 0, 3px, rgba(black, 0.05));
     @include single-transition(box-shadow, 0.25s);
     span:before {
       color: $text-color-light;

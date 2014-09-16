@@ -77,8 +77,8 @@ assets:
     - _assets/stylesheets
   baseurl: /assets/                   # Be careful if the site baseurl is set.
   css_compressor: sass
-  js_compressor:  uglifier
-  cache:          true
+  js_compressor: uglifier
+  cache: true
 
 # Gravatar
 # For more details, refer to https://en.gravatar.com/site/implement/images/

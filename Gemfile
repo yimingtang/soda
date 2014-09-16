@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+# The latest Ruby
+ruby '2.1.2'
 
 # Rake
 gem 'rake'
