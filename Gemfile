@@ -6,18 +6,12 @@ ruby '2.2.0'
 # Utilities
 gem 'rake'
 
-# Jelyll
+# Jekyll
 gem 'jekyll'
-
-# Markdown
-gem 'redcarpet'
-
-# Sitemap generator
 gem 'jekyll-sitemap'
 
 # Assets
 gem 'jekyll-assets'
-gem 'sass'
 gem 'uglifier'
 gem 'compass'
 
