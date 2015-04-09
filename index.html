@@ -16,7 +16,7 @@ layout: default
     {% endif %}
     <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a class="btn nav next" href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older</a>
+      <a class="btn nav next" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
     {% endif %}
   </nav>
   {% endif %}

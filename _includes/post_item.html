@@ -3,7 +3,7 @@
     {% assign post = include.post %}
     {% if site.cover_image == null and post.cover_image %}
       <div class="cover-image">
-        <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}{{ post.cover_image }}"></a>
+        <a href="{{ site.baseurl }}{{ post.url }}"><img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.cover_image }}"></a>
       </div>
     {% endif %}
     <div class="post-meta">
